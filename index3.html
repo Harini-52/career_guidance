@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cool Simple Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style1.css" />
+    <link href="style1.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <form id="myForm" action="process_form.php" method="post">
+      <h2>Fill Up!</h2>
+      <div class="form-group fullname">
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Enter your full name" />
+      </div>
+      <div class="form-group email">
+        <label for="interested_stream">Interested stream</label>
+        <input type="text" name="interested_stream" id="interested_stream" placeholder="Enter stream" />
+      </div>
+
+      <div class="form-group reason">
+        <label for="reason_for_interest">Reason for your interest in this field</label>
+        <input type="text" name="reason_for_interest" id="reason_for_interest" placeholder="" />
+      </div>
+      <div class="form-group board">
+        <label for="board_of_study">Board of study</label>
+        <select name="board_of_study" id="board_of_study">
+          <option value="" selected disabled>Select your Board</option>
+          <option value="ICSE">ICSE</option>
+          <option value="CBSE">CBSE</option>
+          <option value="STATE_BOARD">STATE BOARD</option>
+        </select>
+      </div>
+
+      <div class="form-group mark">
+        <label for="mark_scored">Mark Scored</label>
+        <input type="text" name="mark_scored" id="mark_scored" placeholder="Please enter your mark here" />
+      </div>
+      <div class="form-group extracurricular">
+        <label for="extracurricular_activity">Extra curricular activity</label>
+        <input type="text" name="extracurricular_activity" id="extracurricular_activity" placeholder="" />
+      </div>
+      <div class="form-group date">
+        <label for="date_of_completion">Date of completion</label>
+        <input type="date" name="date_of_completion" id="date_of_completion" placeholder="Select your date" />
+      </div>
+      <div class="form-group gender">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group submit-btn">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <div id="thank-you-content" style="display: none; color: #ffffff;">
+      <h1>Thank you for filling out the form correctly 💙</h1>
+    </div>
+    <!-- partial -->
+    <script src="./script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  border: 1px solid black;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset-5px inset-5px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+.form h1 {
+  color: white;
+  font-size: 2rem;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  margin: 50px;
+}
+/*Boxes*/
+.box {
+  padding: 12px;
+  margin: 20px;
+  width: 65%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: insert-23px -3px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+}
+
+#submit {
+  padding: 10px 20px;
+  margin-top: 50px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: insert -3px -3px rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: -30px;
+  width: 100%; /* Full width */
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
